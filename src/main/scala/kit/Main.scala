@@ -17,7 +17,7 @@ yield i
 val seq = for
   i <- Env.get[Int]
   multiple <- Kyo.fromSeq(1 to 10).map(_ * i)
-  _ <- Aborts.when(multiple < 100)("To big value")
+  _ <- Abort.when(multiple < 100)("To big value")
   _ <- Console.printLine(s"Read $multiple from environment")
 yield i
 
