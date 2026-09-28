@@ -3,7 +3,7 @@ import sbt.Keys.*
 
 object Dependencies {
   object Version {
-    val kyo = "1.0.0-RC5"
+    val kyo = "1.0.0-RC7"
 
   }
 
